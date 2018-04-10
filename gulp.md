@@ -1,5 +1,12 @@
 # Gulp! 一小时从入门到 <del>放...</del> 精通 #
 
+### 安装 ###
+```
+npm install -g gulp //全局安装
+
+npm install --save-dev gulp //本地安装
+```
+### gulpfile.js ###
 ```javascript
 var gulp = require('gulp');
 
