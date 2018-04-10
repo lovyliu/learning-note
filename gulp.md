@@ -38,8 +38,8 @@ gulp.src('./client/templates/*.jade')
 `dest()` 可以接收对象作为第二个参数
 ```javascript
 {
-  cwd: '...', // 写入路径的基准mulu
-  mode: '...' // 权限
+  cwd: '...', // 写入路径的基准目录
+  mode: '...' // 权限
 }
 ```
 
@@ -53,7 +53,6 @@ gulp.task('watch', ['sass'], function () {
 
 ### watch ###
 用于指定需要监视符合所提供的匹配模式（glob）或者匹配模式的数组的文件。一旦这些文件发生变动，就运行指定任务。
-如上例。
 ```javascript
 gulp.task('watch', function () {
    gulp.watch('templates/*.tmpl.html', ['build']);
